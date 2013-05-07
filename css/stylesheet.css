@@ -75,7 +75,7 @@ h1.title {
 }
 
 .wrapper {
-  width: 675px;
+  width: 860px;
   margin: 0 auto;
 }
 
@@ -514,6 +514,10 @@ footer .owner p a {
 .markdown-body img {
   max-width: 100%;
   @include box-sizing(border-box);
+}
+
+.markdown-body p {
+	
 }
 
 .highlight  { background: #ffffff; }
