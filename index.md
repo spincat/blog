@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: post
 ---
 
-{% for post in site.categories.blog %}
-  post			
+{% for post in site.categories. %}
+  {{post}}
 {% endfor %}
