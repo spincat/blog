@@ -2,6 +2,6 @@
 layout: page
 ---
 
-{% for post in site.categories.blog %}
+{% for post in site.categories.life %}
   post			
 {% endfor %}
