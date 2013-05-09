@@ -5,7 +5,7 @@ pygments:         true
 paginate:         6
 permalink:        /:title
 
-title:            Spincat.com
+title:            Spincat.me
 url:              http://spincat.me
 feed:             /atom.xml
 author:
