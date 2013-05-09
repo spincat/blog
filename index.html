@@ -1,3 +1,11 @@
+---
+layout: post
+title: "旋转猫咪"
+date: 2013-05-08 16:55
+comments: true
+categories: ["life", "blogging"]
+alias: [/life/2013-05-08]
+---
 <!doctype html>
 <!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
 <!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
@@ -63,6 +71,33 @@
           </small>
         </div>
       </footer>
-    </div>
-  </body>
+    </div
+	<!-- Piwik -->
+    <script type="text/javascript">
+		window.onload = function() {
+			setTimeout(function(){
+			// piwik
+			var pjs = document.createElement("script");
+			var psc = "http://www.hzsj.org/piwik/";
+			pjs.type = "text/javascript";
+			pjs.src = psc+"piwik.js";
+			pjs.onload = pjs.onreadystatechange = function(){  
+				if( !pjs.readyState || (pjs.readyState && pjs.readyState == 'loaded')){ 
+					try {
+							var piwikTracker = Piwik.getTracker(psc+'piwik.php',5);
+							piwikTracker.trackPageView();
+							piwikTracker.enableLinkTracking();
+					} catch( err ) {}
+				}
+			}
+
+			var head = document.getElementsByTagName('head')[0];
+			head.appendChild(pjs);	
+			},100);
+		};
+	</script>
+    <noscript>
+		<p><img src="http://www.hzsj.org/piwik/piwik.php?idsite=5" style="border:0" alt="" /></p>
+    </noscript>
+    <!-- End Piwik Tracking Code -->
 </html>
