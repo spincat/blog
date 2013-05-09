@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author: Spincat.me
+    -->
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="author" content="{{ site.author.name }}" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/css/default.css" type="text/css" />
+	<link rel="stylesheet" href="/css/pygment_trac.css" type="text/css" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <!--script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script-->
+</head>
+<body>
+
+    {{ content }}
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+		window.onload = function() {
+			setTimeout(function(){
+			// piwik
+			var pjs = document.createElement("script");
+			var psc = "http://www.hzsj.org/piwik/";
+			pjs.type = "text/javascript";
+			pjs.src = psc+"piwik.js";
+			pjs.onload = pjs.onreadystatechange = function(){  
+				if( !pjs.readyState || (pjs.readyState && pjs.readyState == 'loaded')){ 
+					try {
+							var piwikTracker = Piwik.getTracker(psc+'piwik.php',5);
+							piwikTracker.trackPageView();
+							piwikTracker.enableLinkTracking();
+					} catch( err ) {}
+				}
+			}
+
+			var head = document.getElementsByTagName('head')[0];
+			head.appendChild(pjs);	
+			},100);
+		};
+	</script>
+    <noscript>
+		<p><img src="http://www.hzsj.org/piwik/piwik.php?idsite=5" style="border:0" alt="" /></p>
+    </noscript>
+    <!-- End Piwik Tracking Code -->
+</body>
+</html>
