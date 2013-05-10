@@ -2,8 +2,8 @@
 layout: post
 ---
 
-{% for post in site.categories.life %}
+{% for post in site.categories.blog %}
   {{ post.title }}			
   {{ post.description }}
-   {{ post }}
+  {{ post.content }}
 {% endfor %}
