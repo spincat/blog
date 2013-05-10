@@ -2,13 +2,11 @@
 layout: post
 ---
 
-{% for post in paginator.posts %}
-{% if forloop.index == 1 %}
+{% for post in paginator.life %}
 	<div class="container">
 	<div class="title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-	<div class="date">¼ÇÓÚ{{ post.date | date:"%YÄê%mÔÂ%dÈÕ"}} <a href="/categories/#{{ post.categories }}">{{ post.categories }}</a></div>
+	<div class="date">è®°äº{{ post.date | date:"%Yå¹´%mæœˆ%dæ—¥"}} <a href="/categories/#{{ post.categories }}">{{ post.categories }}</a></div>
 	<div class="content">
 	{{ post.content }}
 	</div>
-{% endif %}
 {% endfor %}
