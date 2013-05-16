@@ -2,11 +2,14 @@
 layout: post
 ---
 
-{% for post in paginator.life %}
-	<div class="container">
-	<div class="title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-	<div class="date">记于{{ post.date | date:"%Y年%m月%d日"}} <a href="/categories/#{{ post.categories }}">{{ post.categories }}</a></div>
-	<div class="content">
-	{{ post.content }}
-	</div>
+{% for post in site.categories.life %}
+
+<div class="container">
+## {{ post.title }}
+
+<div class="content">
+
+{{ post.content }}
+
+</div>
 {% endfor %}
