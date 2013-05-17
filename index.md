@@ -9,7 +9,6 @@ layout: post
 
 <div class="content">
 
-{{ post.content }}
 
 </div>
 {% endfor %}
