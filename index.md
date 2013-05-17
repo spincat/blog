@@ -6,7 +6,7 @@ layout: post
 
 <div class="container">
 
-## {{ post.title }}
+<h3> {{ post.title }} </h3>
 
 <div class="content">
 
