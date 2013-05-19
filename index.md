@@ -2,7 +2,7 @@
 layout: post
 ---
 
-{% for post in site.categories.life %}
+{% for post in site.categories.life limit:1 %}
 
 <div class="container">
 
